@@ -1,0 +1,67 @@
+body{
+    background-image: url("./images/wallpaper.png");
+    overflow: none;
+}
+
+.banner {
+    max-width: 90%;
+    max-width: 800px;
+    margin: 120px auto;
+    color: white;
+    text-align: center;
+    margin: 50px auto;
+}
+
+h1 {
+    font-size: 7vh;
+}
+
+h2 {
+    font-size: 8vh;
+    font-family: Arial;
+    margin-top: 0.5em;
+    letter-spacing: 0.7vh;
+    display: inline-block;
+}
+
+.img-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100vw;
+    text-align: center;
+    z-index: 0;
+    height: 25vh;
+    max-height: 400px
+}
+
+img {
+    max-width: 1000px;
+    display: inline-block;
+    position:absolute;
+    bottom: 0;
+    left: calc(50% - 10px); 
+    transform: translate(-50%,25%);
+}
+
+blink {
+  animation: 2s linear infinite condemned_blink_effect;
+}
+
+@keyframes condemned_blink_effect {
+  0% {visibility: hidden;}
+  50% {visibility: hidden;}
+  100% {visibility: visible;}
+}
+
+.rainbow-text {
+	font-family: Arial;
+	font-weight: bold;
+	text-shadow: #A3A3A3 1px 1px 1px;
+}
+
+.rainbow-text .block-line > span {
+	display: inline-block;
+}
